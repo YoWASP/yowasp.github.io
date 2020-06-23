@@ -1,0 +1,9 @@
+title: YoWASP
+description: Unofficial WebAssembly-based packages for Yosys, nextpnr, and more
+github:
+  repository_url: https://github.com/YoWASP
+  owner_name: whitequark
+  owner_url: mailto:whitequark@whitequark.org
+
+markdown: kramdown
+theme: jekyll-theme-slate
