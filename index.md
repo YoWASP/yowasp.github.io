@@ -46,7 +46,7 @@ YoWASP is an early technology preview. At the moment, it provides packages for:
     * [nextpnr upstream repository][nextpnr];
     * [Project IceStorm upstream repository][icestorm];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ice40-all][], [yowasp-nextpnr-ice40-384][], [yowasp-nextpnr-ice40-1k][], [yowasp-nextpnr-ice40-5k][], [yowasp-nextpnr-ice40-8k][], [yowasp-nextpnr-ice40-u4k][].
+    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ice40-all][], [yowasp-nextpnr-ice40-384][], [yowasp-nextpnr-ice40-1k][], [yowasp-nextpnr-ice40-u4k][], [yowasp-nextpnr-ice40-5k][], [yowasp-nextpnr-ice40-8k][].
   * ... more to come!
 
 [yosys]: http://www.clifford.at/yosys
@@ -60,9 +60,9 @@ YoWASP is an early technology preview. At the moment, it provides packages for:
 [yowasp-nextpnr-ice40]: https://pypi.org/project/yowasp-nextpnr-ice40/
 [yowasp-nextpnr-ice40-384]: https://pypi.org/project/yowasp-nextpnr-ice40-384/
 [yowasp-nextpnr-ice40-1k]: https://pypi.org/project/yowasp-nextpnr-ice40-1k/
+[yowasp-nextpnr-ice40-u4k]: https://pypi.org/project/yowasp-nextpnr-ice40-u4k/
 [yowasp-nextpnr-ice40-5k]: https://pypi.org/project/yowasp-nextpnr-ice40-5k/
 [yowasp-nextpnr-ice40-8k]: https://pypi.org/project/yowasp-nextpnr-ice40-8k/
-[yowasp-nextpnr-ice40-u4k]: https://pypi.org/project/yowasp-nextpnr-ice40-u4k/
 [yowasp-nextpnr-ice40-all]: https://pypi.org/project/yowasp-nextpnr-ice40-all/
 
 ## Which platforms are supported?
@@ -86,7 +86,7 @@ This list is unfortunately short. The maintainer of YoWASP is working together w
 
 To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a dependency.
 
-To use nextpnr-ice40, install the `yowasp-nextpnr-ice40-all` package using [pip][] or add it as a dependency. At the moment it is not possible to use a subset of chip data packages.
+To use nextpnr-ice40, install the `yowasp-nextpnr-ice40-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ice40-<chip>` packages if only a subset of all supported devices is wanted.
 
 The installed binaries are prefixed with `yowasp-`. Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
 
