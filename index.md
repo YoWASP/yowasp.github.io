@@ -67,7 +67,7 @@ YoWASP is an early technology preview. At the moment, it provides packages for:
 
 ## Which platforms are supported?
 
-YoWASP relies on a [WebAssembly][] engine to run the WASM code, and inherits its limitations.
+YoWASP relies on a [WebAssembly][] engine to run the WASM code, and inherits both its advantages and its limitations.
 
 YoWASP is an early technology preview. At the moment, it uses the [Wasmtime][] engine, which supports the following platforms:
 
@@ -75,7 +75,7 @@ YoWASP is an early technology preview. At the moment, it uses the [Wasmtime][] e
   * macOS (x86_64),
   * Windows (x86_64).
 
-This list is disappointingly short. The maintainer of YoWASP is working together with the maintainers of several WebAssembly engines to expand it.
+This list is unfortunately short. The maintainer of YoWASP is working together with the maintainers of several WebAssembly engines to expand it.
 
 [wasmtime]: http://wasmtime.dev/
 [wasmer]: https://wasmer.io/
