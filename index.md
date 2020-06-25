@@ -106,7 +106,7 @@ Yosys built for WebAssembly is about twice as slow as a native build. Nextpnr bu
 
 ## How are the packages released?
 
-Packages are automatically built and uploaded to the repository using [GitHub Actions][actions] after every push to one of the [package repositories][pkgrepos].
+Packages are [automatically](/maintaining) built and uploaded to the repository using [GitHub Actions][actions] after every push to one of the [package repositories][pkgrepos].
 
 [actions]: https://github.com/features/actions
 [pkgrepos]: https://github.com/YoWASP
