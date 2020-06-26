@@ -36,7 +36,7 @@ Many new hardware definition languages are *[embedded][edsl]* in another *host* 
 
 ## Which tools are provided?
 
-YoWASP is an early technology preview. At the moment, it provides packages for:
+This project provides packages for:
 
   * Yosys:
     * [upstream repository][yosys];
@@ -45,13 +45,15 @@ YoWASP is an early technology preview. At the moment, it provides packages for:
   * nextpnr:
     * [nextpnr upstream repository][nextpnr];
     * [Project IceStorm upstream repository][icestorm];
+    * [Project Trellis upstream repository][trellis];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ice40-all][], [yowasp-nextpnr-ice40-384][], [yowasp-nextpnr-ice40-1k][], [yowasp-nextpnr-ice40-u4k][], [yowasp-nextpnr-ice40-5k][], [yowasp-nextpnr-ice40-8k][].
-  * ... more to come!
+    * iCE40 PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ice40-all][], [yowasp-nextpnr-ice40-384][], [yowasp-nextpnr-ice40-1k][], [yowasp-nextpnr-ice40-u4k][], [yowasp-nextpnr-ice40-5k][], [yowasp-nextpnr-ice40-8k][].
+    * ECP5 PyPI packages: [yowasp-nextpnr-ecp5][], [yowasp-nextpnr-ecp5-all][], [yowasp-nextpnr-ecp5-25k][], [yowasp-nextpnr-ecp5-45k][], [yowasp-nextpnr-ecp5-85k][].
 
 [yosys]: http://www.clifford.at/yosys
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
-[icestorm]: https://github.com/cliffordwolf/icestorm/
+[icestorm]: https://github.com/YosysHQ/icestorm/
+[trellis]: https://github.com/YosysHQ/prjtrellis/
 
 [yosys-pkg]: https://github.com/YoWASP/yosys
 [nextpnr-pkg]: https://github.com/YoWASP/nextpnr
@@ -64,6 +66,11 @@ YoWASP is an early technology preview. At the moment, it provides packages for:
 [yowasp-nextpnr-ice40-5k]: https://pypi.org/project/yowasp-nextpnr-ice40-5k/
 [yowasp-nextpnr-ice40-8k]: https://pypi.org/project/yowasp-nextpnr-ice40-8k/
 [yowasp-nextpnr-ice40-all]: https://pypi.org/project/yowasp-nextpnr-ice40-all/
+[yowasp-nextpnr-ecp5]: https://pypi.org/project/yowasp-nextpnr-ecp5/
+[yowasp-nextpnr-ecp5-25k]: https://pypi.org/project/yowasp-nextpnr-ecp5-25k/
+[yowasp-nextpnr-ecp5-45k]: https://pypi.org/project/yowasp-nextpnr-ecp5-45k/
+[yowasp-nextpnr-ecp5-85k]: https://pypi.org/project/yowasp-nextpnr-ecp5-85k/
+[yowasp-nextpnr-ecp5-all]: https://pypi.org/project/yowasp-nextpnr-ecp5-all/
 
 ## Which platforms are supported?
 
@@ -86,7 +93,9 @@ This list is unfortunately short. The maintainer of YoWASP is working together w
 
 To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a dependency.
 
-To use nextpnr-ice40, install the `yowasp-nextpnr-ice40-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ice40-<chip>` packages if only a subset of all supported devices is wanted.
+To use nextpnr-ice40, install the `yowasp-nextpnr-ice40-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ice40-<chip>` packages (where `<chip>` is `384` for iCE40LP384, `1k` for iCE40HX1K and iCE40HX8K, `5k` for iCE40UP5K, `8k` for iCE40LP8K and iCE40HX8K, and `u4k` for iCE5LP4K) if only a subset of all supported devices is wanted.
+
+To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ecp5-<chip>` packages (where `<chip>` is `25k` for LFE5U-12F and LFE5U/UM/UM5G-25F, `45k` for LFE5U/UM/UM5G-45F, and `85k` for LFE5U/UM/UM5G-85F) if only a subset of all supported devices is wanted.
 
 The installed binaries are prefixed with `yowasp-`. Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
 
