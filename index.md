@@ -87,6 +87,14 @@ This list is unfortunately short. The maintainer of YoWASP is working together w
 [wasmtime]: http://wasmtime.dev/
 [wasmer]: https://wasmer.io/
 
+## Are there other packages?
+
+YoWASP isn't the only project that packages the open-source FPGA toolchain, and it has some limitations. One of the following projects may suit your workflow better:
+
+  * [Open Tool Forge toolchain][otf] is a native build (x86_64 only) that includes GHDL and programming tools (`iceprog`, `ecpprog`, `dfu-util`, etc).
+
+[otf]: https://github.com/open-tool-forge/fpga-toolchain
+
 ## How do I use the tools...
 
 ### ... with Python?
