@@ -14,7 +14,7 @@ YoWASP (**Yo**sys **W**eb**A**ssembly **S**ynthesis & **P**nR) is a project that
 
 ### Why use WebAssembly?
 
-A batch compiler, such as an FPGA toolchain, transforms input files to output files without using any OS services beyond basic bookkeeping. Is it really necessary to build something so fundementally simple for a large matrix of *every OS* × *every CPU*? With [WebAssembly][] and [WASI][], it is now possible to build a single [universal binary][universal] that runs on many OSes and CPUs.
+A batch compiler, such as an FPGA toolchain, transforms input files to output files without using any OS services beyond basic bookkeeping. Is it really necessary to build something so fundamentally simple for a large matrix of *every OS* × *every CPU*? With [WebAssembly][] and [WASI][], it is now possible to build a single [universal binary][universal] that runs on many OSes and CPUs.
 
 [wasi]: https://wasi.dev/
 [universal]: https://kripken.github.io/talks/2020/universal.html
