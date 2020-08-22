@@ -69,3 +69,9 @@ git push origin develop:release
 ```
 
 Branch protection ensures that the history remains linear (which is important for the automatic versioning to work) and that the `release` branch can only point to commits which successfully build and pass tests.
+
+### Maintenance automation
+
+Every day, the `develop` branch is automatically updated with the latest upstream code. The update is pushed directly to the branch, so this can actually break the build.
+
+Every week, a pull request from the `develop` branch to the `release` branch is automatically created if it does not already exist. This allows a last-minute human review of any packages that are pushed to PyPI while ensuring that keeping the PyPI packages up to date is as easy as clicking a single button.

@@ -125,5 +125,8 @@ Yosys built for WebAssembly is about twice as slow as a native build. Nextpnr bu
 
 Packages are [automatically](/maintaining) built and uploaded to the repository using [GitHub Actions][actions] after every push to one of the [package repositories][pkgrepos].
 
+Every day, latest upstream changes are automatically pulled in, packaged, and uploaded to [Test PyPI][]. Every week, after manual review, latest upstream changes are packaged, uploaded to [PyPI][], and become available to downstream users.
+
 [actions]: https://github.com/features/actions
 [pkgrepos]: https://github.com/YoWASP
+[test pypi]: https://test.pypi.org/
