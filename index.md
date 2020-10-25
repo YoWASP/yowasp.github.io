@@ -157,7 +157,7 @@ At the moment, only PyPI packages are provided. [Open an issue][issue] if you'd 
 
 ## Are the tools slower?
 
-Yosys built for WebAssembly is about twice as slow as a native build. Nextpnr built for WebAssembly runs about as fast as a native build.
+Yosys built for WebAssembly is about half the speed of a native build. Nextpnr built for WebAssembly runs about as fast as a native build.
 
 ## How are the packages released?
 
