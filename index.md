@@ -3,6 +3,44 @@ layout: default
 title: YoWASP
 ---
 
+<style type="text/css">
+blockquote {
+  position: relative;
+  padding: 0.35em 0px 0.35em 40px;
+  line-height: 1.45;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #444;
+  border: none;
+}
+
+blockquote:before {
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  color: #888;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+</style>
+<blockquote>
+This is the most galaxy brained solution to windows package distribution I've seen yet, I'm impressed and horrified
+<cite><a href="https://twitter.com/Amyayash">@Amyayash</a><!-- https://twitter.com/Amyayash/status/1320142568433340417 --></cite>
+</blockquote>
+
 ## What is YoWASP?
 
 YoWASP (**Yo**sys **W**eb**A**ssembly **S**ynthesis & **P**nR) is a project that aims to distribute up-to-date [FOSS FPGA tools][yosyshq] compiled to [WebAssembly][] via language package managers like [Python][]'s [PyPI][].
