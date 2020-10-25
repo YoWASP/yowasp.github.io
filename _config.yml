@@ -4,7 +4,6 @@ github:
   repository_url: https://github.com/YoWASP
   owner_name: whitequark
   owner_url: mailto:whitequark@whitequark.org
-  is_project_page: true # show footer
 
 markdown: kramdown
 theme: jekyll-theme-slate
