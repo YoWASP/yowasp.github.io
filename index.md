@@ -134,13 +134,13 @@ YoWASP isn't the only project that packages the open-source FPGA toolchain, and 
 
 To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a dependency.
 
-To use nextpnr-ice40, install the `yowasp-nextpnr-ice40-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ice40-<chip>` packages (where `<chip>` is `384` for iCE40LP384, `1k` for iCE40LP1K and iCE40HX1K, `5k` for iCE40UP5K, `8k` for iCE40LP8K and iCE40HX8K, and `u4k` for iCE5LP4K) if only a subset of all supported devices is wanted.
+To use nextpnr-ice40, install the `yowasp-nextpnr-ice40` package using [pip][] or add it as a dependency. This package provides support for every device.
 
-To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ecp5-<chip>` packages (where `<chip>` is `25k` for LFE5U-12F and LFE5U/UM/UM5G-25F, `45k` for LFE5U/UM/UM5G-45F, and `85k` for LFE5U/UM/UM5G-85F) if only a subset of all supported devices is wanted.
+To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5` package using [pip][] or add it as a dependency. This package provides support for every device.
   
-To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package provides all of the supported devices.
+To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package provides support for every device.
 
-To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package provides all of the supported devices.
+To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package provides support for every device.
 
 The installed binaries are prefixed with `yowasp-`. Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
 
