@@ -132,17 +132,17 @@ YoWASP isn't the only project that packages the open-source FPGA toolchain, and 
 
 ### ... with Python?
 
-To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a dependency.
+To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a dependency. It provides the `yowasp-yosys`, `yowasp-sby`, and `yowasp-yosys-smtbmc` executables.
 
-To use nextpnr-ice40, install the `yowasp-nextpnr-ice40` package using [pip][] or add it as a dependency. This package provides support for every device.
+To use nextpnr-ice40, install the `yowasp-nextpnr-ice40` package using [pip][] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-ice40`, `yowasp-icepack`, `yowasp-iceunpack`, `yowasp-icebram`, `yowasp-icemulti`, and `yowasp-icepll` executables.
 
-To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5` package using [pip][] or add it as a dependency. This package provides support for every device.
+To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5` package using [pip][] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-ecp5`, `yowasp-ecppack`, `yowasp-ecpunpack`, `yowasp-ecpbram`, `yowasp-ecpmulti`, and `yowasp-ecppll` executables.
   
-To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package provides support for every device.
+To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-nexus` and `yowasp-prjoxide` executables.
 
-To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package provides support for every device.
+To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-gowin` executable. It also depends on a compatible version of the `Apicula` package, which provides the `gowin_pack` and `gowin_unpack` executables.
 
-The installed binaries are prefixed with `yowasp-`. Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
+Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
 
 If the packages are installed in a [virtualenv][], they will only be available in that virtual environment. Otherwise, they will be available system-wide or user-wide, similar to any other Python scripts installed via [pip][].
 
