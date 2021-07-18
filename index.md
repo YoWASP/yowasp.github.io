@@ -86,9 +86,7 @@ This project provides packages for:
     * [Project Trellis upstream repository][trellis];
     * [Project Oxide upstream repository][oxide];
     * [package repository][nextpnr-pkg];
-    * iCE40 PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ice40-all][], [yowasp-nextpnr-ice40-384][], [yowasp-nextpnr-ice40-1k][], [yowasp-nextpnr-ice40-u4k][], [yowasp-nextpnr-ice40-5k][], [yowasp-nextpnr-ice40-8k][].
-    * ECP5 PyPI packages: [yowasp-nextpnr-ecp5][], [yowasp-nextpnr-ecp5-all][], [yowasp-nextpnr-ecp5-25k][], [yowasp-nextpnr-ecp5-45k][], [yowasp-nextpnr-ecp5-85k][].
-    * Nexus PyPI packages: [yowasp-nextpnr-nexus][].
+    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ecp5][], [yowasp-nextpnr-nexus][].
 
 [yosys]: http://www.clifford.at/yosys
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
@@ -101,17 +99,7 @@ This project provides packages for:
 
 [yowasp-yosys]: https://pypi.org/project/yowasp-yosys/
 [yowasp-nextpnr-ice40]: https://pypi.org/project/yowasp-nextpnr-ice40/
-[yowasp-nextpnr-ice40-384]: https://pypi.org/project/yowasp-nextpnr-ice40-384/
-[yowasp-nextpnr-ice40-1k]: https://pypi.org/project/yowasp-nextpnr-ice40-1k/
-[yowasp-nextpnr-ice40-u4k]: https://pypi.org/project/yowasp-nextpnr-ice40-u4k/
-[yowasp-nextpnr-ice40-5k]: https://pypi.org/project/yowasp-nextpnr-ice40-5k/
-[yowasp-nextpnr-ice40-8k]: https://pypi.org/project/yowasp-nextpnr-ice40-8k/
-[yowasp-nextpnr-ice40-all]: https://pypi.org/project/yowasp-nextpnr-ice40-all/
 [yowasp-nextpnr-ecp5]: https://pypi.org/project/yowasp-nextpnr-ecp5/
-[yowasp-nextpnr-ecp5-25k]: https://pypi.org/project/yowasp-nextpnr-ecp5-25k/
-[yowasp-nextpnr-ecp5-45k]: https://pypi.org/project/yowasp-nextpnr-ecp5-45k/
-[yowasp-nextpnr-ecp5-85k]: https://pypi.org/project/yowasp-nextpnr-ecp5-85k/
-[yowasp-nextpnr-ecp5-all]: https://pypi.org/project/yowasp-nextpnr-ecp5-all/
 [yowasp-nextpnr-nexus]: https://pypi.org/project/yowasp-nextpnr-nexus/
 
 ## Which platforms are supported?
