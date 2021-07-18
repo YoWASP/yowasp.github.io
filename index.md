@@ -85,14 +85,16 @@ This project provides packages for:
     * [Project IceStorm upstream repository][icestorm];
     * [Project Trellis upstream repository][trellis];
     * [Project Oxide upstream repository][oxide];
+    * [Project Apicula upstream repository][apicula];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ecp5][], [yowasp-nextpnr-nexus][].
+    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ecp5][], [yowasp-nextpnr-nexus][], [yowasp-nextpnr-gowin][].
 
 [yosys]: http://www.clifford.at/yosys
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
 [icestorm]: https://github.com/YosysHQ/icestorm/
 [trellis]: https://github.com/YosysHQ/prjtrellis/
 [oxide]: https://github.com/gatecat/prjoxide
+[apicula]: https://github.com/YosysHQ/apicula
 
 [yosys-pkg]: https://github.com/YoWASP/yosys
 [nextpnr-pkg]: https://github.com/YoWASP/nextpnr
@@ -101,6 +103,7 @@ This project provides packages for:
 [yowasp-nextpnr-ice40]: https://pypi.org/project/yowasp-nextpnr-ice40/
 [yowasp-nextpnr-ecp5]: https://pypi.org/project/yowasp-nextpnr-ecp5/
 [yowasp-nextpnr-nexus]: https://pypi.org/project/yowasp-nextpnr-nexus/
+[yowasp-nextpnr-gowin]: https://pypi.org/project/yowasp-nextpnr-gowin/
 
 ## Which platforms are supported?
 
@@ -136,6 +139,8 @@ To use nextpnr-ice40, install the `yowasp-nextpnr-ice40-all` package using [pip]
 To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5-all` package using [pip][] or add it as a dependency. It is also possible to install individual `yowasp-nextpnr-ecp5-<chip>` packages (where `<chip>` is `25k` for LFE5U-12F and LFE5U/UM/UM5G-25F, `45k` for LFE5U/UM/UM5G-45F, and `85k` for LFE5U/UM/UM5G-85F) if only a subset of all supported devices is wanted.
   
 To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package provides all of the supported devices.
+
+To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package provides all of the supported devices.
 
 The installed binaries are prefixed with `yowasp-`. Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
 
