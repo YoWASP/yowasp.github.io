@@ -63,13 +63,13 @@ Despite the name, [WebAssembly][] is not tied to browsers; it is a kind of machi
 
 ### Why use language package managers?
 
-Many new hardware definition languages are *[embedded][edsl]* in another *host* language, which comes with its own package manager and repository. For example, [nMigen][] is embedded in [Python][], which uses [pip][] and [PyPI][]. There are several benefits in distributing FPGA tools via language package managers:
+Many new hardware definition languages are *[embedded][edsl]* in another *host* language, which comes with its own package manager and repository. For example, [Amaranth HDL][] is embedded in [Python][], which uses [pip][] and [PyPI][]. There are several benefits in distributing FPGA tools via language package managers:
   * Designers working in such HDLs are already familiar with the package manager of the host language, making it is a convenient distribution mechanism;
   * Synthesis and PnR tools can be added as ordinary dependencies to the project, and their versions can be frozen for reproducibility;
   * "Turnkey" toolchain installation enables new applications that generate FPGA bitstreams just-in-time, or use synthesis tools to transform netlists.
 
 [edsl]: https://en.wikipedia.org/wiki/eDSL
-[nmigen]: https://github.com/nmigen/nmigen
+[amaranth hdl]: https://github.com/amaranth-lang/amaranth
 [pip]: https://pip.pypa.io/
 
 ## Which tools are provided?
