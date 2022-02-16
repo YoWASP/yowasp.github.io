@@ -79,7 +79,7 @@ This project provides packages for:
   * Yosys:
     * [upstream repository][yosys];
     * [package repository][yosys-pkg];
-    * PyPI packages: [yowasp-yosys][].
+    * PyPI packages: [![yowasp-yosys](https://img.shields.io/pypi/v/yowasp-yosys?label=yowasp-yosys)](https://pypi.org/project/yowasp-yosys/).
   * nextpnr:
     * [nextpnr upstream repository][nextpnr];
     * [Project IceStorm upstream repository][icestorm];
@@ -87,7 +87,7 @@ This project provides packages for:
     * [Project Oxide upstream repository][oxide];
     * [Project Apicula upstream repository][apicula];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [yowasp-nextpnr-ice40][], [yowasp-nextpnr-ecp5][], [yowasp-nextpnr-nexus][], [yowasp-nextpnr-gowin][].
+    * PyPI packages: [![yowasp-nextpnr-ice40](https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40)](https://pypi.org/project/yowasp-nextpnr-ice40/), [![yowasp-nextpnr-ecp5](https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5)](https://pypi.org/project/yowasp-nextpnr-ecp5/), [![yowasp-nextpnr-nexus](https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus)](https://pypi.org/project/yowasp-nextpnr-nexus/), [![yowasp-nextpnr-gowin](https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin)](https://pypi.org/project/yowasp-nextpnr-gowin/).
 
 [yosys]: http://www.clifford.at/yosys
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
@@ -98,12 +98,6 @@ This project provides packages for:
 
 [yosys-pkg]: https://github.com/YoWASP/yosys
 [nextpnr-pkg]: https://github.com/YoWASP/nextpnr
-
-[yowasp-yosys]: https://pypi.org/project/yowasp-yosys/
-[yowasp-nextpnr-ice40]: https://pypi.org/project/yowasp-nextpnr-ice40/
-[yowasp-nextpnr-ecp5]: https://pypi.org/project/yowasp-nextpnr-ecp5/
-[yowasp-nextpnr-nexus]: https://pypi.org/project/yowasp-nextpnr-nexus/
-[yowasp-nextpnr-gowin]: https://pypi.org/project/yowasp-nextpnr-gowin/
 
 ## Which platforms are supported?
 
