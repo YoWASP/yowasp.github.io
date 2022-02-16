@@ -35,6 +35,13 @@ blockquote cite {
 blockquote cite:before {
   content: "\2014 \2009";
 }
+
+img.badge {
+  padding: 0;
+  margin: 0;
+  border: none;
+  top: 4px;
+}
 </style>
 <blockquote>
 This is the most galaxy brained solution to windows package distribution I've seen yet, I'm impressed and horrified
@@ -79,7 +86,7 @@ This project provides packages for:
   * Yosys:
     * [upstream repository][yosys];
     * [package repository][yosys-pkg];
-    * PyPI packages: [![yowasp-yosys](https://img.shields.io/pypi/v/yowasp-yosys?label=yowasp-yosys)](https://pypi.org/project/yowasp-yosys/).
+    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-yosys?label=yowasp-yosys&color=green" alt="yowasp-yosys" class="badge">](https://pypi.org/project/yowasp-yosys/).
   * nextpnr:
     * [nextpnr upstream repository][nextpnr];
     * [Project IceStorm upstream repository][icestorm];
@@ -87,7 +94,7 @@ This project provides packages for:
     * [Project Oxide upstream repository][oxide];
     * [Project Apicula upstream repository][apicula];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [![yowasp-nextpnr-ice40](https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40)](https://pypi.org/project/yowasp-nextpnr-ice40/), [![yowasp-nextpnr-ecp5](https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5)](https://pypi.org/project/yowasp-nextpnr-ecp5/), [![yowasp-nextpnr-nexus](https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus)](https://pypi.org/project/yowasp-nextpnr-nexus/), [![yowasp-nextpnr-gowin](https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin)](https://pypi.org/project/yowasp-nextpnr-gowin/).
+    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin&color=green" alt="yowasp-nextpnr-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-gowin/).
 
 [yosys]: http://www.clifford.at/yosys
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
