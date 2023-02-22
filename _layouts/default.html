@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style type="text/css">
+      #project_affiliation {
+        color: #aaa;
+        font-size: 24px;
+        font-weight: 300;
+        background: none;
+        text-shadow: #111 0px 0px 10px;
+        margin-top: -10px;
+      }
+      #project_affiliation a {
+        color: #ccc;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+      #project_affiliation a:hover, #project_affiliation a:active {
+        text-decoration-style: solid;
+      }
+      #header_wrap .inner {
+        padding-bottom: 0px;
+      }
+    </style>
 
 {% seo %}
   </head>
@@ -17,6 +38,7 @@
         <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
         <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
         <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+        <h2 id="project_affiliation">{{ site.affiliation }}</h2>
       </header>
     </div>
 
