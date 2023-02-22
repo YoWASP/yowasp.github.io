@@ -113,10 +113,8 @@ YoWASP relies on a [WebAssembly][] engine to run the WASM code, and inherits bot
 YoWASP is an early technology preview. At the moment, it uses the [Wasmtime][] engine, which supports the following platforms:
 
   * Linux (x86_64 and AArch64),
-  * macOS (x86_64),
+  * macOS (x86_64 and AArch64),
   * Windows (x86_64).
-
-This list is unfortunately short. The maintainer of YoWASP is working together with the maintainers of several WebAssembly engines to expand it.
 
 [wasmtime]: http://wasmtime.dev/
 [wasmer]: https://wasmer.io/
