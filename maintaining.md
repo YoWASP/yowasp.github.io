@@ -70,8 +70,14 @@ git push origin develop:release
 
 Branch protection ensures that the history remains linear (which is important for the automatic versioning to work) and that the `release` branch can only point to commits which successfully build and pass tests.
 
+If you push a commit that has "autorelease" in its message, the branch advancement is done automatically.
+
+Everything described above also applies to any branch matching the `develop*` glob, and its corresponding `release*` branch.
+
 ### Maintenance automation
+
+Routine YoWASP maintenance is completely automated.
 
 Every day, the `develop` branch is automatically updated with the latest upstream code. The update is pushed directly to the branch, so this can actually break the build.
 
-Every week, a pull request from the `develop` branch to the `release` branch is automatically created if it does not already exist. This allows a last-minute human review of any packages that are pushed to PyPI while ensuring that keeping the PyPI packages up to date is as easy as clicking a single button.
+On every upstream release, an autorelease commit is pushed to a new `develop-X.Y.Z` branch, updating according to the newly found upstream tag. Once it is successfully built, the same commit is pushed to a new `release-X.Y.Z` branch. If the build fails, new commits fixing the issues can be pushed to the `develop-X.Y.Z` branch. YoWASP-specific issues can be addressed in a similar way per release branch.

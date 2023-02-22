@@ -161,10 +161,4 @@ Yosys built for WebAssembly is about half the speed of a native build. Nextpnr b
 
 ## How are the packages released?
 
-Packages are [automatically](/maintaining) built and uploaded to the repository using [GitHub Actions][actions] after every push to one of the [package repositories][pkgrepos].
-
-Every day, latest upstream changes are automatically pulled in, packaged, and uploaded to [Test PyPI][]. Every week, after manual review, latest upstream changes are packaged, uploaded to [PyPI][], and become available to downstream users.
-
-[actions]: https://github.com/features/actions
-[pkgrepos]: https://github.com/YoWASP
-[test pypi]: https://test.pypi.org/
+Routine YoWASP maintenance is [fully automated](/maintaining#maintenance-automation). Upstream changes and releases are tracked daily without manual intervention.
