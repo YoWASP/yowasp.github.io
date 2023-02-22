@@ -125,9 +125,9 @@ This list is unfortunately short. The maintainer of YoWASP is working together w
 
 YoWASP isn't the only project that packages the open-source FPGA toolchain, and it has some limitations. One of the following projects may suit your workflow better:
 
-  * [YosysHQ FPGA toolchain][hqtools] is a native build (x86_64 Linux and macOS only) that includes GHDL and programming tools (`iceprog`, `ecpprog`, `dfu-util`, etc).
+  * [YosysHQ OSS CAD suite][hqtools] is a native build that includes GHDL and programming tools (`iceprog`, `ecpprog`, `dfu-util`, etc).
 
-[hqtools]: https://github.com/YosysHQ/fpga-toolchain
+[hqtools]: https://github.com/YosysHQ/oss-cad-suite-build
 
 ## How do I use the tools...
 
