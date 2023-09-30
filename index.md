@@ -42,6 +42,15 @@ img.badge {
   border: none;
   top: 4px;
 }
+
+img.fossi-logo {
+  padding: 0;
+  margin: 0;
+  border: none;
+  top: 9px;
+  margin-right: 10px;
+  box-shadow: none;
+}
 </style>
 <blockquote>
 This is the most galaxy brained solution to windows package distribution I've seen yet, I'm impressed and horrified

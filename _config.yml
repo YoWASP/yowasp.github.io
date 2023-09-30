@@ -1,6 +1,6 @@
 title: YoWASP
 description: Unofficial WebAssembly-based packages for Yosys, nextpnr, and more
-affiliation: A <a href="https://www.fossi-foundation.org/">FOSSi Foundation</a> project
+affiliation: <img src="/assets/images/fossi-foundation-logo.svg" class="fossi-logo"> A <a href="https://www.fossi-foundation.org/">FOSSi Foundation</a> project
 github:
   repository_url: https://github.com/YoWASP
   owner_name: whitequark
