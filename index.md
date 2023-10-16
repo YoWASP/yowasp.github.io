@@ -156,6 +156,31 @@ Try running e.g. `yowasp-yosys --version` to see if everything works! When the t
 
 If the packages are installed in a [virtualenv][], they will only be available in that virtual environment. Otherwise, they will be available system-wide or user-wide, similar to any other Python scripts installed via [pip][].
 
+Consider also using [PDM](https://pdm.fming.dev/), which conveniently provides a way to set the required environment variables automatically in the `pyproject.toml` file...
+
+```toml
+[project]
+...
+dependencies = [
+    "yowasp-yosys",
+    "yowasp-nextpnr-ice40",
+]
+
+[tool.pdm.scripts]
+_.env_file = ".env.toolchain"
+...
+```
+
+... together with a `.env.toolchain` file...
+
+```
+YOSYS=yowasp-yosys
+NEXTPNR_ICE40=yowasp-nextpnr-ice40
+ICEPACK=yowasp-icepack
+```
+
+... such that they are set for any command run with `pdm run <command>`.
+
 [virtualenv]: https://virtualenv.pypa.io/
 
 ### ... with other languages?
