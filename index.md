@@ -103,7 +103,7 @@ This project provides packages for:
     * [Project Oxide upstream repository][oxide];
     * [Project Apicula upstream repository][apicula];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin&color=green" alt="yowasp-nextpnr-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-gowin/).
+    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-machxo2?label=yowasp-nextpnr-machxo2&color=green" alt="yowasp-nextpnr-machxo2" class="badge">](https://pypi.org/project/yowasp-nextpnr-machxo2/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin&color=green" alt="yowasp-nextpnr-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-gowin/).
 
 [yosys]: https://yosyshq.net/yosys/
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
@@ -145,7 +145,9 @@ To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a de
 To use nextpnr-ice40, install the `yowasp-nextpnr-ice40` package using [pip][] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-ice40`, `yowasp-icepack`, `yowasp-iceunpack`, `yowasp-icebram`, `yowasp-icemulti`, and `yowasp-icepll` executables.
 
 To use nextpnr-ecp5, install the `yowasp-nextpnr-ecp5` package using [pip][] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-ecp5`, `yowasp-ecppack`, `yowasp-ecpunpack`, `yowasp-ecpbram`, `yowasp-ecpmulti`, and `yowasp-ecppll` executables.
-  
+
+To use nextpnr-machxo2, install the `yowasp-nextpnr-machxo2` package using [pip][] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-machxo2`, `yowasp-xo2pack`, `yowasp-xo2unpack`, `yowasp-xo2bram`, `yowasp-xo2multi`, and `yowasp-xo2pll` executables. The `yowasp-xo2*` executables are bit-for-bit identical to the `yowasp-ecp*` executables above, but are renamed to avoid a conflict during installation.
+
 To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-nexus` and `yowasp-prjoxide` executables.
 
 To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-gowin` executable. It also depends on a compatible version of the `Apicula` package, which provides the `gowin_pack` and `gowin_unpack` executables.
