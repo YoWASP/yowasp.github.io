@@ -75,7 +75,7 @@ A batch compiler, such as an FPGA toolchain, transforms input files to output fi
 
 ### Do I need a browser?
 
-Despite the name, [WebAssembly][] is not tied to browsers; it is a kind of machine code that can be easily translated into x86, ARM, or other machine code that your CPU runs directly. The YoWASP project currently does **not** provide tools that can run in a browser.
+Despite the name, [WebAssembly][] is not tied to browsers; it is a kind of machine code that can be easily translated into x86, ARM, or other machine code that your CPU runs directly. The tools provided by the YoWASP project can run directly on top of an operating system as well as within a browser environment. (The availability of tools may vary.)
 
 ### Why use language package managers?
 
@@ -96,6 +96,7 @@ This project provides packages for:
     * [upstream repository][yosys];
     * [package repository][yosys-pkg];
     * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-yosys?label=yowasp-yosys&color=green" alt="yowasp-yosys" class="badge">](https://pypi.org/project/yowasp-yosys/).
+    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/yosys?label=@yowasp/yosys&color=green" alt="@yowasp/yosys" class="badge">](https://npmjs.com/package/@yowasp/yosys).
   * nextpnr:
     * [nextpnr upstream repository][nextpnr];
     * [Project IceStorm upstream repository][icestorm];
@@ -117,16 +118,21 @@ This project provides packages for:
 
 ## Which platforms are supported?
 
-YoWASP relies on a [WebAssembly][] engine to run the WASM code, and inherits both its advantages and its limitations.
+### Python embedding
 
-YoWASP is an early technology preview. At the moment, it uses the [Wasmtime][] engine, which supports the following platforms:
+YoWASP Python relies on a [WebAssembly][] engine to run the Wasm code, and inherits both its advantages and its limitations.
+
+At the moment, YoWASP Python uses the [Wasmtime][] engine, which supports the following platforms:
 
   * Linux (x86_64 and AArch64),
   * macOS (x86_64 and AArch64),
   * Windows (x86_64).
 
 [wasmtime]: http://wasmtime.dev/
-[wasmer]: https://wasmer.io/
+
+### Browser/Node.js embedding
+
+YoWASP JavaScript relies on the [WebAssembly][] engine in [the browser](https://caniuse.com/wasm) or [Node.js](https://nodejs.org/) to run the Wasm code. Any version of a major browser or Node.js released within the last several years offers full support for WebAssembly.
 
 ## Are there other packages?
 
@@ -183,9 +189,40 @@ ICEPACK=yowasp-icepack
 
 [virtualenv]: https://virtualenv.pypa.io/
 
+### ... in a browser?
+
+These instructions assume the use of [ES Modules][esm], and make use of the [unpkg][] content delivery network. It is also possible to distribute the YoWASP binaries by adding the relevant `@yowasp/*` NPM package as a dependency using a bundler such as [webpack](https://webpack.js.org/).
+
+To use Yosys, import the [@yowasp/yosys][] NPM package from the CDN and call its `runYosys` entry point:
+
+```js
+import { runYosys } from 'https://unpkg.com/@yowasp/yosys/gen/bundle-browser.js';
+await runYosys(["--version"]);
+```
+
+The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
+
+[esm]: https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
+[unpkg]: https://unpkg.com/
+[@yowasp/yosys]: https://www.npmjs.com/package/@yowasp/yosys
+[runtime-js-README]: https://github.com/YoWASP/runtime-js#readme
+
+### ... within Node.js?
+
+These instructions assume the use of [ES Modules][esm].
+
+To use Yosys, install the [@yowasp/yosys][] NPM package as a dependency, which can be done by running `npm install @yowasp/yosys`, import it and call its `runYosys` entry point:
+
+```js
+import { runYosys } from '@yowasp/yosys';
+await runYosys(["--version"]);
+```
+
+The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
+
 ### ... with other languages?
 
-At the moment, only PyPI packages are provided. [Open an issue][issue] if you'd like YoWASP packages to be built for another ecosystem.
+At the moment, only PyPI and NPM packages are provided. [Open an issue][issue] if you'd like YoWASP packages to be built for another ecosystem.
 
 [issue]: https://github.com/YoWASP/yowasp.github.io/issues
 
