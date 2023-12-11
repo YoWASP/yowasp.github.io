@@ -59,12 +59,14 @@ This is the most galaxy brained solution to windows package distribution I've se
 
 ## What is YoWASP?
 
-YoWASP (**Yo**sys **W**eb**A**ssembly **S**ynthesis & **P**nR) is a project that aims to distribute up-to-date [FOSS FPGA tools][yosyshq] compiled to [WebAssembly][] via language package managers like [Python][]'s [PyPI][].
+YoWASP (**Yo**sys **W**eb**A**ssembly **S**ynthesis & **P**nR) is a project that aims to distribute up-to-date [FOSS FPGA tools][yosyshq] compiled to [WebAssembly][] via language package managers like [Python][]'s [PyPI][] and [JavaScript][]'s [NPM][].
 
 [yosyshq]: https://github.com/YosysHQ/
 [webassembly]: https://webassembly.org/
 [python]: https://python.org/
 [pypi]: https://pypi.org/
+[javascript]: https://developer.mozilla.org/en-US/docs/Web/javascript
+[npm]: https://npmjs.org/
 
 ### Why use WebAssembly?
 
