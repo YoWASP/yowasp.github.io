@@ -77,7 +77,9 @@ A batch compiler, such as an FPGA toolchain, transforms input files to output fi
 
 ### Do I need a browser?
 
-Despite the name, [WebAssembly][] is not tied to browsers; it is a kind of machine code that can be easily translated into x86, ARM, or other machine code that your CPU runs directly. The tools provided by the YoWASP project can run directly on top of an operating system as well as within a browser environment. (The availability of tools may vary.)
+Despite the name, [WebAssembly][] is not tied to browsers; it is a kind of machine code that can be easily translated into x86, ARM, or other machine code that your CPU runs directly. The tools provided by the YoWASP project can run directly on top of an operating system as well as within a browser environment. The project also provides an [extension][vscode-ext] for Visual Studio Code, an editor built on top of browser technology.
+
+[vscode-ext]: https://marketplace.visualstudio.com/items?itemName=yowasp.toolchain
 
 ### Why use language package managers?
 
