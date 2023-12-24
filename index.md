@@ -109,6 +109,11 @@ This project provides packages for:
     * [Project Apicula upstream repository][apicula];
     * [package repository][nextpnr-pkg];
     * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-machxo2?label=yowasp-nextpnr-machxo2&color=green" alt="yowasp-nextpnr-machxo2" class="badge">](https://pypi.org/project/yowasp-nextpnr-machxo2/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin&color=green" alt="yowasp-nextpnr-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-gowin/).
+    * NPM packages: , [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ice40?label=@yowasp/nextpnr-ice40&color=green" alt="@yowasp/nextpnr-ice40" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ice40), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ecp5?label=@yowasp/nextpnr-ecp5&color=green" alt="@yowasp/nextpnr-ecp5" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ecp5), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-machxo2?label=@yowasp/nextpnr-machxo2&color=green" alt="@yowasp/nextpnr-machxo2" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-machxo2), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-nexus?label=@yowasp/nextpnr-nexus&color=green" alt="@yowasp/nextpnr-nexus" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-nexus).
+  * openFPGALoader:
+    * [upstream repository][openFPGALoader];
+    * [package repository][openFPGALoader-pkg];
+    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/openfpgaloader?label=@yowasp/openfpgaloader&color=green" alt="@yowasp/openfpgaloader" class="badge">](https://npmjs.com/package/@yowasp/openfpgaloader).
 
 [yosys]: https://yosyshq.net/yosys/
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
@@ -116,9 +121,11 @@ This project provides packages for:
 [trellis]: https://github.com/YosysHQ/prjtrellis/
 [oxide]: https://github.com/gatecat/prjoxide
 [apicula]: https://github.com/YosysHQ/apicula
+[openFPGALoader]: https://github.com/trabucayre/openFPGALoader
 
 [yosys-pkg]: https://github.com/YoWASP/yosys
 [nextpnr-pkg]: https://github.com/YoWASP/nextpnr
+[openFPGALoader-pkg]: https://github.com/YoWASP/openFPGALoader-web
 
 ## Which platforms are supported?
 
@@ -195,19 +202,19 @@ ICEPACK=yowasp-icepack
 
 ### ... in a browser?
 
-These instructions assume the use of [ES Modules][esm], and make use of the [unpkg][] content delivery network. It is also possible to distribute the YoWASP binaries by adding the relevant `@yowasp/*` NPM package as a dependency using a bundler such as [webpack](https://webpack.js.org/).
+These instructions assume the use of [ES Modules][esm], and make use of the [jsDelivr][] content delivery network. It is also possible to distribute the YoWASP binaries by adding the relevant `@yowasp/*` NPM package as a dependency using a bundler such as [webpack](https://webpack.js.org/).
 
 To use Yosys, import the [@yowasp/yosys][] NPM package from the CDN and call its `runYosys` entry point:
 
 ```js
-import { runYosys } from 'https://unpkg.com/@yowasp/yosys/gen/bundle-browser.js';
+import { runYosys } from 'https://cdn.jsdelivr.net/npm/@yowasp/yosys/gen/bundle-browser.js';
 await runYosys(["--version"]);
 ```
 
 The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
 
 [esm]: https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
-[unpkg]: https://unpkg.com/
+[jsDelivr]: https://www.jsdelivr.com/
 [@yowasp/yosys]: https://www.npmjs.com/package/@yowasp/yosys
 [runtime-js-README]: https://github.com/YoWASP/runtime-js#readme
 
