@@ -110,6 +110,10 @@ This project provides packages for:
     * [package repository][nextpnr-pkg];
     * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-machxo2?label=yowasp-nextpnr-machxo2&color=green" alt="yowasp-nextpnr-machxo2" class="badge">](https://pypi.org/project/yowasp-nextpnr-machxo2/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin&color=green" alt="yowasp-nextpnr-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-gowin/).
     * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ice40?label=@yowasp/nextpnr-ice40&color=green" alt="@yowasp/nextpnr-ice40" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ice40), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ecp5?label=@yowasp/nextpnr-ecp5&color=green" alt="@yowasp/nextpnr-ecp5" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ecp5), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-machxo2?label=@yowasp/nextpnr-machxo2&color=green" alt="@yowasp/nextpnr-machxo2" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-machxo2), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-nexus?label=@yowasp/nextpnr-nexus&color=green" alt="@yowasp/nextpnr-nexus" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-nexus).
+  * boolector:
+    * [upstream repository][boolector];
+    * [package repository][boolector-pkg];
+    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-boolector?label=yowasp-boolector&color=green" alt="yowasp-boolector" class="badge">](https://pypi.org/project/yowasp-boolector/).
   * openFPGALoader:
     * [upstream repository][openFPGALoader];
     * [package repository][openFPGALoader-pkg];
@@ -121,10 +125,12 @@ This project provides packages for:
 [trellis]: https://github.com/YosysHQ/prjtrellis/
 [oxide]: https://github.com/gatecat/prjoxide
 [apicula]: https://github.com/YosysHQ/apicula
+[boolector]: https://boolector.github.io/
 [openFPGALoader]: https://github.com/trabucayre/openFPGALoader
 
 [yosys-pkg]: https://github.com/YoWASP/yosys
 [nextpnr-pkg]: https://github.com/YoWASP/nextpnr
+[boolector-pkg]: https://github.com/YoWASP/boolector
 [openFPGALoader-pkg]: https://github.com/YoWASP/openFPGALoader-web
 
 ## Which platforms are supported?
@@ -158,6 +164,8 @@ YoWASP isn't the only project that packages the open-source FPGA toolchain, and 
 ### ... with Python?
 
 To use Yosys, install the `yowasp-yosys` package using [pip][] or add it as a dependency. It provides the `yowasp-yosys`, `yowasp-sby`, and `yowasp-yosys-smtbmc` executables.
+
+To use Boolector, install the `yowasp-boolector` package using [pip][] or add it as a dependency. It provides the `yowasp-boolector` executable.
 
 To use nextpnr-ice40, install the `yowasp-nextpnr-ice40` package using [pip][] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-ice40`, `yowasp-icepack`, `yowasp-iceunpack`, `yowasp-icebram`, `yowasp-icemulti`, and `yowasp-icepll` executables.
 
