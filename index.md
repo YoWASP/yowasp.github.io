@@ -215,7 +215,7 @@ These instructions assume the use of [ES Modules][esm], and make use of the [jsD
 To use Yosys, import the [@yowasp/yosys][] NPM package from the CDN and call its `runYosys` entry point:
 
 ```js
-import { runYosys } from 'https://cdn.jsdelivr.net/npm/@yowasp/yosys/gen/bundle-browser.js';
+import { runYosys } from 'https://cdn.jsdelivr.net/npm/@yowasp/yosys/gen/bundle.js';
 await runYosys(["--version"]);
 ```
 
