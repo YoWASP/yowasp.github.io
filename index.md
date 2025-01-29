@@ -100,7 +100,7 @@ This project provides packages for:
     * [upstream repository][yosys];
     * [package repository][yosys-pkg];
     * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-yosys?label=yowasp-yosys&color=green" alt="yowasp-yosys" class="badge">](https://pypi.org/project/yowasp-yosys/).
-    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/yosys?label=@yowasp/yosys&color=green" alt="@yowasp/yosys" class="badge">](https://npmjs.com/package/@yowasp/yosys).
+    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/yosys/release?label=@yowasp/yosys&color=green" alt="@yowasp/yosys" class="badge">](https://npmjs.com/package/@yowasp/yosys).
   * nextpnr:
     * [nextpnr upstream repository][nextpnr];
     * [Project IceStorm upstream repository][icestorm];
