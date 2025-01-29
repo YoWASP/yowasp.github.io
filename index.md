@@ -108,8 +108,8 @@ This project provides packages for:
     * [Project Oxide upstream repository][oxide];
     * [Project Apicula upstream repository][apicula];
     * [package repository][nextpnr-pkg];
-    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-machxo2?label=yowasp-nextpnr-machxo2&color=green" alt="yowasp-nextpnr-machxo2" class="badge">](https://pypi.org/project/yowasp-nextpnr-machxo2/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-gowin?label=yowasp-nextpnr-gowin&color=green" alt="yowasp-nextpnr-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-gowin/).
-    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ice40?label=@yowasp/nextpnr-ice40&color=green" alt="@yowasp/nextpnr-ice40" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ice40), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ecp5?label=@yowasp/nextpnr-ecp5&color=green" alt="@yowasp/nextpnr-ecp5" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ecp5), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-machxo2?label=@yowasp/nextpnr-machxo2&color=green" alt="@yowasp/nextpnr-machxo2" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-machxo2), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-nexus?label=@yowasp/nextpnr-nexus&color=green" alt="@yowasp/nextpnr-nexus" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-nexus).
+    * PyPI packages: [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ice40?label=yowasp-nextpnr-ice40&color=green" alt="yowasp-nextpnr-ice40" class="badge">](https://pypi.org/project/yowasp-nextpnr-ice40/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-ecp5?label=yowasp-nextpnr-ecp5&color=green" alt="yowasp-nextpnr-ecp5" class="badge">](https://pypi.org/project/yowasp-nextpnr-ecp5/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-machxo2?label=yowasp-nextpnr-machxo2&color=green" alt="yowasp-nextpnr-machxo2" class="badge">](https://pypi.org/project/yowasp-nextpnr-machxo2/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-nexus?label=yowasp-nextpnr-nexus&color=green" alt="yowasp-nextpnr-nexus" class="badge">](https://pypi.org/project/yowasp-nextpnr-nexus/), [<img src="https://img.shields.io/pypi/v/yowasp-nextpnr-himbaechel-gowin?label=yowasp-nextpnr-himbaechel-gowin&color=green" alt="yowasp-nextpnr-himbaechel-gowin" class="badge">](https://pypi.org/project/yowasp-nextpnr-himbaechel-gowin/).
+    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ice40?label=@yowasp/nextpnr-ice40&color=green" alt="@yowasp/nextpnr-ice40" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ice40), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-ecp5?label=@yowasp/nextpnr-ecp5&color=green" alt="@yowasp/nextpnr-ecp5" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-ecp5), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-machxo2?label=@yowasp/nextpnr-machxo2&color=green" alt="@yowasp/nextpnr-machxo2" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-machxo2), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-nexus?label=@yowasp/nextpnr-nexus&color=green" alt="@yowasp/nextpnr-nexus" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-nexus), [<img src="https://img.shields.io/npm/v/@yowasp/nextpnr-himbaechel-gowin?label=@yowasp/nextpnr-himbaechel-gowin&color=green" alt="@yowasp/nextpnr-himbaechel-gowin" class="badge">](https://npmjs.com/package/@yowasp/nextpnr-himbaechel-gowin).
   * boolector:
     * [upstream repository][boolector];
     * [package repository][boolector-pkg];
@@ -175,7 +175,7 @@ To use nextpnr-machxo2, install the `yowasp-nextpnr-machxo2` package using [pip]
 
 To use nextpnr-nexus, install the `yowasp-nextpnr-nexus` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-nexus` and `yowasp-prjoxide` executables.
 
-To use nextpnr-gowin, install the `yowasp-nextpnr-gowin` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-gowin` executable. It also depends on a compatible version of the `Apicula` package, which provides the `gowin_pack` and `gowin_unpack` executables.
+To use nextpnr-gowin, install the `yowasp-nextpnr-himbaechel-gowin` package using [pip] or add it as a dependency. This package contains support for every device, and provides the `yowasp-nextpnr-himbaechel-gowin` executable. It also depends on a compatible version of the `Apicula` package, which provides the `gowin_pack` and `gowin_unpack` executables.
 
 Try running e.g. `yowasp-yosys --version` to see if everything works! When the tools are run for the first time, it will take a few seconds for them to be compiled to machine code.
 
@@ -221,6 +221,8 @@ await runYosys(["--version"]);
 
 The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
 
+Using `@yowasp/nextpnr-himbaechel-gowin` requires using a bundler to supply the `pyodide` import or providing a `loadPyodide` option to the `runGowinPll`, `runGowinPack`, and `runGowinUnpack` functions.
+
 [esm]: https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
 [jsDelivr]: https://www.jsdelivr.com/
 [@yowasp/yosys]: https://www.npmjs.com/package/@yowasp/yosys
@@ -238,6 +240,8 @@ await runYosys(["--version"]);
 ```
 
 The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
+
+Using `@yowasp/nextpnr-himbaechel-gowin` requires also installing the `pyodide` NPM package.
 
 ### ... with other languages?
 
