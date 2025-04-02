@@ -8,3 +8,5 @@ github:
 
 markdown: kramdown
 theme: jekyll-theme-slate
+
+include: [".well-known"]
