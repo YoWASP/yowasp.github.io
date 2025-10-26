@@ -118,6 +118,10 @@ This project provides packages for:
     * [upstream repository][openFPGALoader];
     * [package repository][openFPGALoader-pkg];
     * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/openfpgaloader?label=@yowasp/openfpgaloader&color=green" alt="@yowasp/openfpgaloader" class="badge">](https://npmjs.com/package/@yowasp/openfpgaloader).
+  * Clang/LLD:
+    * [upstream repository][llvm-project];
+    * [package repository][clang-pkg];
+    * NPM packages: [<img src="https://img.shields.io/npm/v/@yowasp/clang?label=@yowasp/clang&color=green" alt="@yowasp/clang" class="badge">](https://npmjs.com/package/@yowasp/clang).
 
 [yosys]: https://yosyshq.net/yosys/
 [nextpnr]: https://github.com/YosysHQ/nextpnr/
@@ -127,11 +131,13 @@ This project provides packages for:
 [apicula]: https://github.com/YosysHQ/apicula
 [boolector]: https://boolector.github.io/
 [openFPGALoader]: https://github.com/trabucayre/openFPGALoader
+[llvm-project]: https://github.com/llvm/llvm-project/
 
 [yosys-pkg]: https://github.com/YoWASP/yosys
 [nextpnr-pkg]: https://github.com/YoWASP/nextpnr
 [boolector-pkg]: https://github.com/YoWASP/boolector
 [openFPGALoader-pkg]: https://github.com/YoWASP/openFPGALoader-web
+[clang-pkg]: https://github.com/YoWASP/clang
 
 ## Which platforms are supported?
 
@@ -219,13 +225,22 @@ import { runYosys } from 'https://cdn.jsdelivr.net/npm/@yowasp/yosys/gen/bundle.
 await runYosys(["--version"]);
 ```
 
-The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
-
 Using `@yowasp/nextpnr-himbaechel-gowin` requires using a bundler to supply the `pyodide` import or providing a `loadPyodide` option to the `runGowinPll`, `runGowinPack`, and `runGowinUnpack` functions.
+
+To use Clang, import the [@yowasp/clang][] NPM package from the CDN and call its `runClang` entry point:
+
+```js
+import { runClang } from 'https://cdn.jsdelivr.net/npm/@yowasp/clang/gen/bundle.js';
+await runClang(["clang", "--version"]);
+await runClang(["clang++", "--version"]);
+```
+
+The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
 
 [esm]: https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
 [jsDelivr]: https://www.jsdelivr.com/
 [@yowasp/yosys]: https://www.npmjs.com/package/@yowasp/yosys
+[@yowasp/clang]: https://www.npmjs.com/package/@yowasp/clang
 [runtime-js-README]: https://github.com/YoWASP/runtime-js#readme
 
 ### ... within Node.js?
@@ -239,9 +254,17 @@ import { runYosys } from '@yowasp/yosys';
 await runYosys(["--version"]);
 ```
 
-The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
-
 Using `@yowasp/nextpnr-himbaechel-gowin` requires also installing the `pyodide` NPM package.
+
+To use Clang, install the [@yowasp/clang][] NPM package as a dependency, which can be done by running `npm install @yowasp/clang`, import it and call its `runClang` entry point:
+
+```js
+import { runClang } from '@yowasp/yosys';
+await runClang(["clang", "--version"]);
+await runClang(["clang++", "--version"]);
+```
+
+The [JavaScript runtime README][runtime-js-README] describes how to transfer files to and from the application.
 
 ### ... with other languages?
 
